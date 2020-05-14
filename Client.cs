@@ -8,6 +8,10 @@ namespace Gulyaev_AG_4
 {
     class Client
     {
+        /// <summary>
+        /// Вывод настроек для выбранного редактора
+        /// </summary>
+        /// <param factory="Параметр для получения настроек выбранного редактора"></param>
         public void ConfEditor(ISettingsFactory factory)
         {
             var Settings = factory.MakeSettings();
@@ -23,6 +27,9 @@ namespace Gulyaev_AG_4
             Console.WriteLine("Цвет шрифта для комментариев: " + Settings.SetCommentColour());
         }
 
+        /// <summary>
+        /// Вывод настроек для SQL-редактора
+        /// </summary>
         public void SQL()
         {
             Console.WriteLine("Конфигурации для SQL-редактора:");
@@ -30,6 +37,9 @@ namespace Gulyaev_AG_4
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// Вывод настроек для С#-редактора
+        /// </summary>
         public void Sharp()
         {
             Console.WriteLine("Конфигурации для C#-редактора:");
@@ -37,6 +47,9 @@ namespace Gulyaev_AG_4
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// Вывод настроек для HTML-редактора
+        /// </summary>
         public void HTML()
         {
             Console.WriteLine("Конфигурации для HTML-редактора:");
